@@ -2,6 +2,7 @@ var db = require('../models');
 
 module.exports = function(app) {
     app.get('/api/addresses', function(req, res) {
+        console.log('Hi from addresses');
         db.Addresses.findAll().then(function(allAddresses) {
             res.json(allAddresses)
         });

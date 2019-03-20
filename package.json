@@ -4,12 +4,18 @@
   "description": "Tutorial for Express",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "client": "cd garagesale && npm run start",
+    "build": "cd garagesale && npm run build",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "cd garagesale && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
-  "author": "Hugh Veal",
+  "author": "Hugh Veal and Wynston Saamoi",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
     "express": "^4.16.4",
     "mysql": "^2.16.0",
     "mysql2": "^1.6.5",

@@ -3,12 +3,12 @@ import React,{Component} from "react";
 
 class Card extends Component{
     state={
-        FirstName:"" ,
-        LastName:"",
-        City:"",
-        State:"",
-        Street:"",
-        ItemName:""
+        FirstName:"John" ,
+        LastName:"Doe",
+        City:"Concord",
+        State:"NC",
+        Street:"1000 Harden Lane",
+        ItemName:"Bike"
     }
     handleSubmit(){
 
@@ -21,7 +21,7 @@ class Card extends Component{
             <p className="card-text">{this.state.FirstName}{this.state.LastName}{this.state.City}{this.state.State}{this.state.Street}</p>
             <p className="btn btn-primary">Remove</p>
             <p className="btn btn-secondary">Generate Flyers/Signs</p>
-            <p className="btn btn-danger">Generate Qr/Barode</p>
+            <p className="btn btn-danger">Generate QR/Barode</p>
           </div>
         </div>
             )
