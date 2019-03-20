@@ -12,6 +12,12 @@ module.exports = function(app) {
         })
     });
 
+    app.get('/api/getinventory', function(req, res) {
+        db.Inventory.findAll().then(function(allInventory) {
+            res.json(allInventory)
+        })
+    });
+
     app.post('/api/newaddress', function(req, res) {
         var newAddress = req.body;
         // Send data to the db
@@ -31,6 +37,12 @@ module.exports = function(app) {
     });
 
     //Add Post route for garage sale
-    
+    app.post('/api/newsale', function(req, res) {
+        var garageSale = req.body;
+        //Send new item to the db
+        db.GarageSales.create(garageSale).then(function(newgaragesale) {
+            res.json(newgaragesale);
+        });
+    });
 };
 
