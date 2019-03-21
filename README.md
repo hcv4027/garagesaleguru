@@ -16,6 +16,9 @@ We collaborated on this project, splitting the overhead of building out this app
 ## Live Link
 https://glacial-stream-32367.herokuapp.com/
 
+## Usage
+![screenshot_main](https://github.com/hcv4027/garagesaleguru/blob/master/images/screenshot_001.png)
+
 ## Technologies Used
 - Express.js
 - Node.js
