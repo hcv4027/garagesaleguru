@@ -1,0 +1,67 @@
+/*styling for Home page*/
+h1{
+    margin:0;
+    font-family: 'Volkhov', serif;
+    text-align: center;
+    
+};
+.jumbotron{
+    background-image: "../guru.png"
+}
+.Button1{
+    cursor: pointer;
+}
+
+.Button2{
+    cursor: pointer;
+    display:flex;
+    box-shadow:0px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23);
+    justify-content: center;
+}
+.Image:hover {
+    background-color: #ccc;
+    cursor:pointer;
+}
+p{
+    text-align: center;
+}
+
+/*styling for Buyer page */
+
+.CardColumns{
+    display:flex;
+    box-shadow:0px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23);
+    justify-content: center;
+    caption-side: bottom;
+    cursor: pointer;
+    };
+    .ModalFooter{
+
+
+    }
+
+
+
+
+
+/*styling for Seller Page */
+.Card{
+    border: 5px solid #f1f1f1;;
+    display:flex;
+    background-size: cover;
+    background-position:50%;
+    box-shadow:0px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23);
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+.Input:hover {
+    opacity: 1;
+}
+input[type=submit]{
+    color:red;
+    cursor:pointer;
+}

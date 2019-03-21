@@ -2,7 +2,7 @@ import React,{Component} from "react";
 import {Redirect} from "react-router-dom";
 import {Button,ModalFooter} from "reactstrap";
 
-//import Card from "../Card/Cards"
+import "../Pages/Home.css";
 
 
 class Buyer extends Component{
@@ -26,8 +26,7 @@ class Buyer extends Component{
         }
     }
     render(){
-        return(
-    
+        return(    
             <div>
           <ModalFooter>
               {this.renderRedirect()}

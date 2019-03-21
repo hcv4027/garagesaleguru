@@ -1,5 +1,7 @@
 import React, {Component} from "react";
 import {Redirect} from "react-router-dom";
+import {Container,Col,Row} from "reactstrap";
+import Image from "react-bootstrap/Image";
 
 class Button1 extends Component{
     state = {
@@ -16,10 +18,20 @@ renderRedirect(){
     }
 }
     render(){
-        return( <div>
+        return( 
+            
+        <div>
             {this.renderRedirect()}
-            <button onClick={this.setRedirect.bind(this)} type="button" class="btn btn-primary btn-lg btn-block">Buyer</button>
-                </div>
+            <Container >
+        <Row>
+        <Col xs={6} md={4}>
+        <Image onClick={this.setRedirect.bind(this)} src="https://picsum.photos/400/300?image=0" rounded />
+        Buyer
+    </Col>
+    </Row>
+    </Container>
+        </div>
+        
        );
    }
 };

@@ -2,6 +2,7 @@ import React from "react";
 import Item from "../Form/Item";
 import NavElement from "../Nav/Navbar";
 import Card from "../Card/Cards"
+import "../Pages/Home.css"
 
 
 
@@ -10,7 +11,11 @@ function Seller(){
     <div>
         <NavElement />
          <Item />
-         <Card />
+         <div>
+             
+             <Card />
+        </div>
+         
     </div>
        
 

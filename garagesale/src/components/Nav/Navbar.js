@@ -15,10 +15,7 @@ class NavElement extends Component{
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">Components</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="">GarageSale</NavLink>
+                <NavLink href="/Buyer/SaleNotification">Notification(SignUp)</NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
